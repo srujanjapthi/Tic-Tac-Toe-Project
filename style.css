@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #265073;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #d3d3d3;
+    text-shadow: 5px 3px 5px rgb(54, 54, 54, 0.5);
+}
+
+.game {
+    height: 60vh;
+    padding-top: 25px;
+}
+
+.game-board {
+    height: 60vmin;
+    width: 60vmin;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 0;
+    padding: 50px;
+}
+
+.box {
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 15px;
+    justify-self: center;
+    border: none;
+    box-shadow: 3px 4px 8px rgba(5, 5, 5, 0.7);
+    transition: .3s;
+    background-color: #DAFFFB;
+    font-size: 8vmin;
+    color: #013C50;
+    text-shadow: 1px 2px 4px #11749995;
+    cursor: pointer;
+}
+
+.box:hover {
+    scale: 1.02;
+    background-color: #befcf5;
+}
+
+#reset-btn,
+#new-btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #CBE4DE;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.4);
+    transition: .1s;
+}
+
+#new-btn {
+    background-color: #021313;
+    color: #e1fefb;
+    border: 1px solid white;
+}
+
+button:hover {
+    scale: 1.03;
+}
+
+.msg-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.opaque {
+    opacity: 0;
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+    transition: 1s;
+}
+
+#msg {
+    font-size: 3rem;
+    color: #DAFFFB;
+}
